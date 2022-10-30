@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31338c5f-5021-4be9-93a9-21953b6f6adf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/manager/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/manager/ProductManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/repository/ProductRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/repository/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/repository/ProductRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/IT/Netologia/Java/Tasks/ProductManager/src/test/java/ru/netology",
-    "last_opened_file_path": "C:/IT/Netologia/Java/Tasks/Poster"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/IT/Netologia/Java/Tasks/ProductManager/src/test/java/ru/netology&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IT/Netologia/Java/Tasks/ProductManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductRepositoryTest">
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest.testRemoveNotFoundException">
     <configuration name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductManager" />
       <extension name="coverage">
@@ -64,38 +61,6 @@
       <option name="PACKAGE_NAME" value="ru.netology.manager" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.shouldSearchBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProductManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.manager" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
-      <option name="METHOD_NAME" value="shouldSearchBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.shouldSearchWhenFewProductsSuit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProductManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.manager" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
-      <option name="METHOD_NAME" value="shouldSearchWhenFewProductsSuit" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,13 +96,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductRepositoryTest.testRemoveID3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProductManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testRemoveID3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.testRemoveNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProductManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testRemoveNotFoundException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductRepositoryTest.testRemoveNotFoundException" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testRemoveID3" />
         <item itemvalue="JUnit.ProductRepositoryTest" />
         <item itemvalue="JUnit.ProductManagerTest" />
         <item itemvalue="JUnit.ProductManagerTest.shouldSearchWhenProductsNotSuit" />
-        <item itemvalue="JUnit.ProductManagerTest.shouldSearchWhenFewProductsSuit" />
-        <item itemvalue="JUnit.ProductManagerTest.shouldSearchBy" />
       </list>
     </recent_temporary>
   </component>

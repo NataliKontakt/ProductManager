@@ -11,7 +11,7 @@ public class ProductRepositoryTest {
     Book book1 = new Book(5, "Повести Белкина", 500, "Пушкин");
     Book book2 = new Book(7, "Бородино", 200, "Лермонтов");
     Book book3 = new Book(15, "Мастер и Маргарита", 300, "Булгаков");
-    Smartphone smartphone1 = new Smartphone(5, "Телефон 1", 50, "iPhone");
+    Smartphone smartphone1 = new Smartphone(10, "Телефон 1", 50, "iPhone");
     Smartphone smartphone2 = new Smartphone(2, "Телефон 2", 100, "Samsung");
     Smartphone smartphone3 = new Smartphone(3, "Телефон 3", 150, "Nokia");
 
@@ -58,6 +58,10 @@ public class ProductRepositoryTest {
         Product[] actual = repository.getProducts();
         Assertions.assertArrayEquals(actual, expected);
     }
+
+
+
+
     @Test
     public void testSmartphone2 () {
         ProductRepository repository = new ProductRepository();
@@ -75,4 +79,35 @@ public class ProductRepositoryTest {
         Product[] actual = repository.getProducts();
         Assertions.assertArrayEquals(actual, expected);
     }
+    @Test
+    public void testRemoveID3 () {
+        ProductRepository repository = new ProductRepository();
+        repository.save(smartphone1);
+        repository.save(smartphone2);
+        repository.save(smartphone3);
+        repository.removeById(3);
+
+        Product[] expected = {smartphone1, smartphone2};
+        Product[] actual = repository.findAll();
+        Assertions.assertArrayEquals(actual, expected);
+    }
+    @Test
+    public void testRemoveNotFoundException () {
+        ProductRepository repository = new ProductRepository();
+        repository.save(book1);
+        repository.save(book2);
+        repository.save(book3);
+        repository.save(smartphone1);
+        repository.save(smartphone2);
+        repository.save(smartphone3);
+    Assertions.assertThrows(NotFoundException.class, () ->{
+        repository.removeById(11);
+    });
+    }
+
 }
+
+
+
+
+
